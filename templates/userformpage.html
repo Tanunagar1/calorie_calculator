@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>userformpage</title>
+    <link rel="stylesheet" href="static/form.css">
+</head>
+<body>
+<h1>The User Information Form</h1>
+<p>Please Fill The Form</p>
+<form action="/user_form_page" method="post">
+{{userform.weight.label}}{{userform.weight}}
+    <br>
+    {{userform.height.label}}{{userform.height}}
+    <br>
+    {{userform.age.label}}{{userform.age}}
+    <br>
+    {{userform.country.label}}{{userform.country}}
+    <br>
+    {{userform.city.label}}{{userform.city}}
+    <br>
+    <br>
+    {{userform.button}}
+
+</form>
+ {% if message %}
+        <script>
+            alert("{{ message }}");
+        </script>
+    {% endif %}
+
+    <hr>
+
+   <h1>Result</h1>
+  <h3>per day calorie you need = {{result}}</h3>
+
+
+
+
+
+</body>
+</html>

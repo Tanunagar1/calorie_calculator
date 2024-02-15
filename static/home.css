@@ -1,0 +1,25 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1,p{
+  text-align:center;
+}
+
+h1{
+ color:red;
+}
+.calorie-link{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+}
+
+.calorie-link:hover {
+    text-decoration: underline;
+}
+}
+
+#------------------------------------------#
